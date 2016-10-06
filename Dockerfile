@@ -23,8 +23,6 @@ RUN mkdir -p /root/.pebble-sdk/ && \
 COPY pebble /usr/local/bin/
 RUN yes | pebble sdk install $PEBBLE_SDK_VERSION
 
-RUN mkdir /pebble
-VOLUME /pebble
-WORKDIR /pebble
+WORKDIR /
 CMD pebble --help
 
