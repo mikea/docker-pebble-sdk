@@ -1,5 +1,7 @@
 # docker-pebble-sdk
 
+[![CircleCI](https://circleci.com/gh/mikea/docker-pebble-sdk.svg?style=svg)](https://circleci.com/gh/mikea/docker-pebble-sdk)
+
 Docker image for Pebble SDK
 
 
