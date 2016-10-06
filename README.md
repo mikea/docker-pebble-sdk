@@ -23,5 +23,5 @@ docker build -t docker-pebble-sdk .
 From app directory:
 
 ```bash
-docker run --rm -ti -v $PWD:/pebble docker-pebble-sdk pebble compile
+docker run --rm -ti -v $PWD:/app docker-pebble-sdk /bin/sh -c "cd /app && pebble build"
 ```
