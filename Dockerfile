@@ -8,11 +8,10 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get install -y git curl
+RUN apt-get install -y libfreetype6-dev
 RUN apt-get install -y gcc-arm-none-eabi python python-pip python-dev nodejs npm
 RUN pip install --upgrade pip
 RUN pip install virtualenv
-
-RUN apt-get install -y libfreetype6-dev
 
 RUN git clone https://github.com/pebble/pebble-tool.git /tool
 WORKDIR /tool
