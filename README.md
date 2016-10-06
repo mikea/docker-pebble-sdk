@@ -25,3 +25,12 @@ From app directory:
 ```bash
 docker run --rm -ti -v $PWD:/app docker-pebble-sdk /bin/sh -c "cd /app && pebble build"
 ```
+
+## Creating App Build Dockerfile
+
+```Dockerfile
+FROM docker-pebble-sdk
+COPY . /app/
+WORKDIR /app
+CMD pebble build
+```
